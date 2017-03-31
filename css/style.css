@@ -25,6 +25,66 @@ hr {
     font-family: "Ropa Sans", sans-serif;
 }
 
+.fcc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h3 {
+  font-size: 40px;
+  font-family: "Francois One", sans-serif;
+  color: white;
+}
+
+
+/*====Navbar v2 ====*/
+
+.navbar-default {
+  background-color: transparent;
+  border: none;
+}
+
+.navbar-nav {
+  margin: 0px -15px;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: white;
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+  color: white /*Orange*/;
+  background-color: rgba(0, 0, 0, .3);
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover,  {
+  color: #fff;
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.navbar-header {
+  background-color: transparent;
+}
+
+.navbar-collapse {
+  border: none;
+
+}
+
+.navbar-collapse ul {
+  border: 1px solid lightgrey;
+}
+
+ .navbar-collapse li{
+  background-color: skyblue;
+}
+
+.navbar-toggle {
+  background-color: lightgrey;
+}
+
+
 /*==== Jumbotron ====*/
 .jumbotron {
   height: 100vh;
@@ -47,6 +107,24 @@ h1 {
   position: relative;
 }
 /*==== Nav Tabs ====*/
+.navbar-default {
+  background-color: transparent;
+  border: none;
+}
+
+.font18 {
+  font-size: 30px
+}
+
+.breadcrumb{
+  width: 51%;
+  margin: 0 auto;
+}
+
+.nav-style {
+  text-decoration: none;
+}
+
 .box-area {
   background-color: rgba(0, 0, 0, .1);
   max-height: 300px;*/
@@ -71,35 +149,8 @@ h1 {
   font-size: 18px;
 }
 
-/*====Tab Panes ====*/
+/*====Animation ====*/
 
-    /* WORK */
-#home {
-
-}
-
-#profile{
-
-}
-    /* About Me */
-.me-pic {
-  padding: 20px;
-}
-
-.flex-cont {
-  display: flex;
-  height: 100%;
-}
-/*.flex-child {
-  align-self: flex-end;
-}*/
-
-.profile{
-  font-size: 18px;
-  align-self: center;
-}
-
-    /* Contact Me */
 
 /*===== Work ====*/
 .work {
@@ -110,20 +161,13 @@ h1 {
 
 
 .work-left{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: lightblue;
+  background-color: skyblue;
   height: 100vh;
-  width: 50%;
   font-size: 40px;
 }
 
-
-
 .work-right{
   height: 100vh;
-  width: 50%;
 }
 
 
@@ -133,27 +177,137 @@ h1 {
   align-content: space-around;
 }
 
-.work-1 {
-  background-color: lightpink;
-  height: 33.3vh;
 
+
+.work-1 {
+  /*background-color: lightpink;*/
+  height: 33.3vh;
+  border-bottom: 1px solid lightgrey;
+  font-size: 22px;
+}
+
+.work-1-img{
+  background-image:url("../img/dog1.png");
+  min-width: 186px;
+  width: 250px;
+  max-height:80%;
+  min-height: 80%;
+  border: 1px solid rgba(255,127,80, 0.75) ;
+  margin-right: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: skyblue;
+  background-size: cover;
+}
+
+.work-1-img:hover{
+  background-image:url("../img/petstore.png") ;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .work-2 {
-  background-color: lavender;
-  height: 33.4vh;
+  background-image:url("../img/wood.png");
+  min-width: 186px;
+  width: 250px;
+  max-height:80%;
+  min-height: 80%;
+  border: 1px solid rgba(255,127,80, 0.75) ;
+  margin-right: 30px;
+  background-position: center;
+  }
 
+.work-2:hover{
+  background-image:url("../img/logo-11.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: grey;
 }
 
 .work-3 {
-  background-color: green;
-  height: 33.3vh;
+  background-image:url("../img/in-prog.png");
+  min-width: 186px;
+  width: 250px;
+  max-height:80%;
+  min-height: 80%;
+  border: 1px solid rgba(255,127,80, 0.75) ;
+  margin-right: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
 
+.work-3:hover{
+  background-image:url("../img/in-prog2.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: grey;
 }
 
 /*==== About Me ====*/
 
+.about {
+  width: 100%;
+  height: 100vh;
+}
 
+.about h3 {
+  color: grey;
+}
+.about-right{
+
+  height: 100vh;
+  background-color: #bdc3c7; /*silver*/
+}
+
+.about-left{
+
+  background-color: white;
+  color: grey;
+  height: 100vh;
+  font-size: 40px;
+}
+
+.about-1 {
+  background-color: lightgreen;
+  height: 33.3vh;
+  font-size: 18px;
+}
+
+.about-1 img {
+  border: 1px solid rgba(255,127,80, 0.75);
+  margin-right: 20px;
+  max-height: 250px;
+}
+
+/*====Contact ====*/
+.contact {
+  width: 100%;
+  height: 100vh;
+}
+
+
+
+.contact-left{
+  background-color: skyblue;
+  height: 100vh;
+  font-size: 40px;
+}
+
+.contact-right{
+  height: 100vh;
+}
+
+.contact-1 {
+  background-color: blanchedalmond;
+  border:3px solid lightgrey;
+  height: 33.3vh;
+  font-size: 18px;
+}
 
 
 
@@ -161,7 +315,65 @@ h1 {
 
 
 /*==== Media Query ====*/
+@media screen and (max-width: 1199px) {
+  .work-left, .work-right, .work-1, .work-2, .work-3, .about-left, .contact-left {
+    height: 25vh
+  }
+
+  .work-right, .about-right, .contact-right {
+    height: 75vh;
+  }
+  .about-left {
+    background-color: skyblue;
+  }
+  .about-left h3 {
+    color:white;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+   .list-inline{
+
+  }
+}
+/*@media screen and (max-width: 1346px) and (min-width: 768px){
+  .contact-1{
+    width: 39vh;
+  }
+  .about-1 {
+    width: 39vh;
+  }
+}
+
+@media screen and (max-width: 1345px) and (min-width: 1050px){
+  .contact-1{
+    width: 54vh;
+  }
+  .about-1 {
+    width: 54vh;
+  }
+}
+
 @media screen and (max-width: 767px){
+  .jumbotron {
+    height: 60vh
+  }
+
+  .jumbotron p {
+    font-size: 16px;
+  }
+
+  .breadcrumb {
+    width: 80%;
+  }
+  .descrip {
+    width: 60%;
+    left: 20%;
+  }
+  h1 {
+    margin-top: 30px;
+  }
   .work-left {
     height: 150px;
     width: 100%;
@@ -171,7 +383,63 @@ h1 {
     height: 150px;
     width: 100%;
   }
+  .about-left {
+    height: 150px;
+    width: 100%;
+  }
+
+  .about-right{
+    height: 250px;
+    width: 100%;
+  }
+  .about{
+    margin-top: 150px;
+    height: 400px;
+  }
+  .about-1 {
+    height: 15vh;
+    width: 54vh;
+  }
+
+  .contact {
+    height: 31vh;
+  }
+  .contact-left {
+    height: 150px;
+    width: 100%;
+  }
+
+  .contact-right{
+    height: 150px;
+    width: 100%;
+  }
+  .contact-1 {
+    height: 15vh;
+    width: 54vh;
+  }
+
 }
+
+@media screen and (max-width: 508px){
+  .breadcrumb {
+    width: 100%;
+  }
+  .about-1 {
+    height: 26vh;
+    width: 27vh;
+  }
+  .contact-1 {
+    width: 27vh;
+  }
+  .contact {
+    height: 33vh;
+  }
+  .font18{
+    font-size: 16px;
+  }
+
+}*/
+
 
 
 /*==== END ====*/

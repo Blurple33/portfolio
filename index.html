@@ -10,32 +10,78 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<!-- nav1 -->
+<nav class="navbar navbar-default navbar-fixed-top font-francois text-uppercase "> <!--navbar start-->
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right text-center pull-right">
+        <li><a href="#home">home</a></li>
+        <li><a href="#work">work</a></li>
+        <li><a href="#about">about</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div>
+</nav>
+  <!-- /nav1 -->
 <!-- Jumbotron Starts -->
-  <div class="jumbotron">
+  <div id="home" class="jumbotron">
     <div class="container-fluid text-white text-center font-francois">
       <h1>Leoncio Bancoro Jr.</h1>
       <hr></hr>
       <p class="descrip font-ropa">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque sapiente provident, tenetur itaque. Tempora dicta quas nostrum praesentium quo mollitia?</p>
       <hr></hr>
     </div>
-<!-- Nav Tabs Begins -->
+<!-- Breadcrumb Begins -->
+    <!-- <div class="container">
+      <ol class="breadcrumb hidden-xs hidden-sm hidden-md text-center text-uppercase nav-setup font18 font-francois">
+        <li><a href="#home">home</a></li>
+        <li><a href="#work">work</a></li>
+        <li><a href="#about">about</a></li>
+        <li><a href="#contact">contact</a></li>
+      </ol>
+    </div> -->
+<!-- Breadcrumb End -->
+<!-- Animation Begins -->
 
-<!-- Nav Tabs End -->
+<!--  Animation Ends -->
   </div>
 <!-- Jumbotron Ends -->
 <!-- Work Starts -->
   <div class="container work">
     <div class="row">
-      <div class="col-sm-12 col-lg-6 col-lg-offset-0 work-left text-uppercase text-white font-francois">
-        work
+      <div id="work" class="col-lg-6 work-left fcc">
+        <h3 class="text-center text-uppercase fcc">work</h3>
       </div>
-      <div class="col-sm-12 col-lg-6 col-sm-offset-0 work-right">
+      <div class="col-lg-6 work-right">
         <div class="row">
-          <div class="flexbox">
-            <div class="col-sm-12 col-lg-10 col-lg-offset-1 work-1">work1</div>
-            <div class="col-sm-12 col-lg-10 col-lg-offset-1 work-2">work2</div>
-            <div class="col-sm-12 col-lg-10 col-lg-offset-1 work-3">work3</div>
-          </div>
+          <!-- <div class="flexbox"> -->
+            <div class="col-xs-12 work-1 fcc font-ropa">
+              <a href="https://blurple33.github.io/petstore/" class="work-1-img img-circle" target="_blank"></a>
+              <!-- <img src="img/dog1.png" alt="Pet Store" class="img-circle img-responsive"> -->
+              Here is an example of a pet store's online shop using HTML &amp; CSS.
+            </div>
+
+            <div class="col-xs-12 work-1 fcc font-ropa">
+              <a href="https://blurple33.github.io/restaurante/" class="work-2 img-circle" target="_blank"></a>
+              <!-- <img src="img/wood.png" alt="Restaurant" class="img-circle img-responsive"> -->
+              Here is an example of a restaurant's online shop using HTML &amp; CSS.
+            </div>
+
+            <div class="col-xs-12 work-1 fcc font-ropa">
+              <a href="" class="work-3 img-circle" target="_blank"></a>
+              <!-- <img src="https://unsplash.it/250/250" alt="Pet Store" class="img-circle img-responsive"> -->
+              Here is an example of an image [work in progress] using HTML &amp; CSS.
+            </div>
+          <!-- </div> -->
         </div>
       </div>
     </div>
@@ -44,13 +90,49 @@
 <!-- About Me Starts -->
   <div class="container about">
     <div class="row">
-      <div class="col-sm-12 col-lg-6 col-lg-offset-0 about-left text-uppercase text-white font-francois">
-        about
+      <div id="about" class="col-lg-6 about-left fcc text-uppercase text-white font-francois">
+        <h3 class="text-center text-uppercase fcc">about</h3>
       </div>
+      <div class="col-lg-6 about-right fcc">
+        <div class="row">
+          <div class="col-xs-12 about-1 font-ropa fcc text-center">
+            <img src="img/me.jpg" alt="me" class="img-rounded img-responsive">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem ipsam eum obcaecati provident perspiciatis nemo enim, ab, mollitia quia.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- About Me Ends -->
+<!-- Contact Starts -->
+<div class="container contact">
+  <div class="row">
+    <div id="contact" class="col-lg-6 contact-left fcc text-white font-francois">
+        <h3 class="text-center text-uppercase fcc">contact</h3>
+    </div>
+    <div class="col-lg-6 contact-right fcc">
+      <div class="col-xs-12 contact-1 fcc">
+        <ul class="list-inline text-center">
+          <li><p><i class="fa fa-camera" aria-hidden="true"></i>  Instagram</p></li>
+          <li><p><i class="fa fa-twitter" aria-hidden="true"></i>  Twitter</p></li>
+          <li><p><i class="fa fa-facebook" aria-hidden="true"></i>  Facebook</p></li>
+          <li><p><i class="fa fa-linkedin" aria-hidden="true"></i>  Linked In</p></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
 
 
+
+
+
+
+
+
+<!-- Contact Ends -->
   <!--scripts-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script src="js/scroll.js"></script>
 </body>
 </html>
